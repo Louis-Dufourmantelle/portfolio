@@ -3,17 +3,17 @@ const AbstractManager = require("./AbstractManager");
 class TechnologyManager extends AbstractManager {
   static table = "technology";
 
-  insert(project) {
+  insert(technology) {
     return this.connection.query(
       `insert into ${TechnologyManager.table} (name), values (?),`,
-      [project.title, project.description, project.date, project.link]
+      [technology.name]
     );
   }
 
-  update(project) {
+  update(technology) {
     return this.connection.query(
       `update ${TechnologyManager.table} set name = ? where id = ?`,
-      [project.name, project.id]
+      [technology.name, technology.id]
     );
   }
 }
