@@ -5,7 +5,7 @@ class TechnologyManager extends AbstractManager {
 
   insert(technology) {
     return this.connection.query(
-      `insert into ${TechnologyManager.table} (name), values (?),`,
+      `insert into ${TechnologyManager.table} (name) values (?)`,
       [technology.name]
     );
   }

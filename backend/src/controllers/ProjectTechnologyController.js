@@ -1,8 +1,8 @@
 const models = require("../models");
 
-class TechnologyController {
+class ProjectTechnologyController {
   static browse = (req, res) => {
-    models.technology
+    models.project_technology
       .findAll()
       .then(([rows]) => {
         res.send(rows);
@@ -14,7 +14,7 @@ class TechnologyController {
   };
 
   static read = (req, res) => {
-    models.technology
+    models.project_technology
       .find(req.params.id)
       .then(([rows]) => {
         if (rows[0] == null) {
@@ -30,14 +30,14 @@ class TechnologyController {
   };
 
   static edit = (req, res) => {
-    const technology = req.body;
+    const projectTechnology = req.body;
 
     // TODO validations (length, format...)
 
-    technology.id = parseInt(req.params.id, 10);
+    projectTechnology.id = parseInt(req.params.id, 10);
 
     models.technology
-      .update(technology)
+      .update(projectTechnology)
       .then(([result]) => {
         if (result.affectedRows === 0) {
           res.sendStatus(404);
@@ -52,14 +52,14 @@ class TechnologyController {
   };
 
   static add = (req, res) => {
-    const technology = req.body;
+    const projectTechnology = req.body;
 
     // TODO validations (length, format...)
 
-    models.technology
-      .insert(technology)
+    models.project
+      .insert(projectTechnology)
       .then(([result]) => {
-        res.status(201).send({ ...technology, id: result.insertId });
+        res.status(201).send({ ...projectTechnology, id: result.insertId });
       })
       .catch((err) => {
         console.error(err);
@@ -80,4 +80,4 @@ class TechnologyController {
   };
 }
 
-module.exports = TechnologyController;
+module.exports = ProjectTechnologyController;
