@@ -1,10 +1,12 @@
 import React from "react";
 import louisProfil from "../assets/img/louis-profil.png";
 
-export default function Home() {
+export default function Profil() {
   return (
     <>
-      <h2 className="profile">A Propos de moi</h2>
+      <h2 id="profil" className="profile">
+        A Propos de moi
+      </h2>
       <section id="profile" className="biographie flex">
         <picture className="flex">
           <img src={louisProfil} alt="profil" className="photo" />

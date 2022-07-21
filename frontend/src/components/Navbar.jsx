@@ -6,10 +6,10 @@ function Navbar() {
       <div>
         <ul id="menu">
           <li>
-            <a href="#profile">Profile</a>
+            <a href="#profil">Profile</a>
           </li>
           <li>
-            <a href="#competence">Compétence</a>
+            <a href="#skills">Compétence</a>
           </li>
           <li>
             <a href="#projet">Projets</a>

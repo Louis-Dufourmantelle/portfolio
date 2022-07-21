@@ -20,6 +20,7 @@
 
 .photo {
   height: 300px;
+  margin-right: 3rem;
 }
 
 .biographie picture,
@@ -35,4 +36,38 @@
 .biographie picture {
   justify-content: flex-end;
   align-items: center;
+}
+
+.skill {
+  text-align: center;
+}
+
+.tech {
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.cv {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imgcv {
+  max-width: 300px;
+  border: 3px solid #a9a9b3;
+  margin-right: 5rem;
+}
+
+.front-end {
+  text-align: center;
+}
+
+.back-end {
+  text-align: center;
 }
