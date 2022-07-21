@@ -72,20 +72,21 @@ ALTER TABLE `project`
 
 CREATE TABLE `technology` (
   `id` int(11) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL
+  `name` varchar(255) NOT NULL,
+  `logo` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `technology`
 --
 
-INSERT INTO `technology` (`id`, `name`) VALUES
-(1, "HTML"),
-(2, "CSS"),
-(3, "JavaScript"),
-(4, "Mysql"),
-(5, "Express"),
-(6, "Node.js");
+INSERT INTO `technology` (`id`, `name`, `logo`) VALUES
+(1, "HTML", 'html.png'),
+(2, "CSS", 'css.png'),
+(3, "JavaScript", 'java.png'),
+(4, "Mysql", 'mysql.png'),
+(5, "Express", 'express.png'),
+(6, "Node.js", 'node.png');
 
 --
 -- Index pour les tables exportées
