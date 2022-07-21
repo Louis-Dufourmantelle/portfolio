@@ -56,7 +56,7 @@ class TechnologyController {
 
     // TODO validations (length, format...)
 
-    models.project
+    models.technology
       .insert(technology)
       .then(([result]) => {
         res.status(201).send({ ...technology, id: result.insertId });
