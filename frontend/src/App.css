@@ -36,3 +36,11 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+.skill {
+  text-align: center;
+}
+
+.tech {
+  text-align: center;
+}
