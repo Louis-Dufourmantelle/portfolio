@@ -72,21 +72,19 @@ ALTER TABLE `project`
 
 CREATE TABLE `technology` (
   `id` int(11) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `logo` varchar(255) NOT NULL
+  `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `technology`
 --
 
-INSERT INTO `technology` (`id`, `name`, `logo`) VALUES
-(1, "HTML", 'html.png'),
-(2, "CSS", 'css.png'),
-(3, "JavaScript", 'java.png'),
-(4, "Mysql", 'mysql.png'),
-(5, "Express", 'express.png'),
-(6, "Node.js", 'node.png');
+INSERT INTO `technology` (`id`, `name`) VALUES
+(1, "HTML"),
+(2, "CSS"),
+(3, "JavaScript"),
+(4, "Mysql"),
+(5, "Node.js");
 
 --
 -- Index pour les tables exportées
@@ -106,7 +104,7 @@ ALTER TABLE `technology`
 -- AUTO_INCREMENT pour la table `technology`
 --
 ALTER TABLE `technology`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
@@ -139,13 +137,11 @@ INSERT INTO `project_technology` (`project_id`, `technology_id`) VALUES
 (2, 3),
 (2, 4),
 (2, 5),
-(2, 6),
 (3, 1),
 (3, 2),
 (3, 3),
 (3, 4),
-(3, 5),
-(3, 6);
+(3, 5);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
