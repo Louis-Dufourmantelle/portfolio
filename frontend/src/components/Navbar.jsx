@@ -12,7 +12,7 @@ function Navbar() {
             <a href="#skills">Compétence</a>
           </li>
           <li>
-            <a href="#projet">Projets</a>
+            <a href="#projets">Projets</a>
           </li>
           <li>
             <a href="#admin">Admin</a>
